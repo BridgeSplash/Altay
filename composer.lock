@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "668d2fa10c996a7b57541103b46cf53d",
+    "content-hash": "d8dda94485d944df19ae6a76a22cade8",
     "packages": [
         {
             "name": "adhocore/json-comment",
@@ -222,16 +222,16 @@
         },
         {
             "name": "altayofficial/network",
-            "version": "1.2.0",
+            "version": "1.5.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/altayofficial/Network.git",
-                "reference": "af4f91a6dbd241005b477d686210a5b572cd459e"
+                "reference": "be4778bf670a7cf9135f6f7ebe12c37e375d2180"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/altayofficial/Network/zipball/af4f91a6dbd241005b477d686210a5b572cd459e",
-                "reference": "af4f91a6dbd241005b477d686210a5b572cd459e",
+                "url": "https://api.github.com/repos/altayofficial/Network/zipball/be4778bf670a7cf9135f6f7ebe12c37e375d2180",
+                "reference": "be4778bf670a7cf9135f6f7ebe12c37e375d2180",
                 "shasum": ""
             },
             "require": {
@@ -245,7 +245,7 @@
                 "react/event-loop": "^1.5"
             },
             "require-dev": {
-                "altayofficial/webrtc": "^1.2.0",
+                "altayofficial/webrtc": "^1.9.0",
                 "phpstan/phpstan": "^2.0",
                 "phpunit/phpunit": "^10.5",
                 "react/http": "^1.11"
@@ -267,22 +267,22 @@
             "description": "Central network library for Altay family written in PHP",
             "support": {
                 "issues": "https://github.com/altayofficial/Network/issues",
-                "source": "https://github.com/altayofficial/Network/tree/1.2.0"
+                "source": "https://github.com/altayofficial/Network/tree/1.5.1"
             },
-            "time": "2026-09-19T13:19:25+00:00"
+            "time": "2026-10-29T09:12:32+00:00"
         },
         {
             "name": "altayofficial/webrtc",
-            "version": "1.6.5",
+            "version": "1.9.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/altayofficial/webrtc.git",
-                "reference": "0f8557ee74d40c2d5c3cc34eac9c0f1d93155fa7"
+                "reference": "f35b559fe1dafa10ff2dd9181d391d61e4b16640"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/altayofficial/webrtc/zipball/0f8557ee74d40c2d5c3cc34eac9c0f1d93155fa7",
-                "reference": "0f8557ee74d40c2d5c3cc34eac9c0f1d93155fa7",
+                "url": "https://api.github.com/repos/altayofficial/webrtc/zipball/f35b559fe1dafa10ff2dd9181d391d61e4b16640",
+                "reference": "f35b559fe1dafa10ff2dd9181d391d61e4b16640",
                 "shasum": ""
             },
             "require": {
@@ -345,9 +345,9 @@
             "description": "A WebRTC library designed special for Altay family",
             "support": {
                 "issues": "https://github.com/altayofficial/webrtc/issues",
-                "source": "https://github.com/altayofficial/webrtc/tree/1.6.5"
+                "source": "https://github.com/altayofficial/webrtc/tree/1.9.0"
             },
-            "time": "2026-09-15T15:58:48+00:00"
+            "time": "2026-10-29T09:11:01+00:00"
         },
         {
             "name": "altayofficial/worldupgraderschemas",
@@ -1914,16 +1914,16 @@
         },
         {
             "name": "symfony/polyfill-php84",
-            "version": "v1.38.1",
+            "version": "v1.43.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/polyfill-php84.git",
-                "reference": "f4e1dfaee5b74aba5964fe1fd4dfc7ba5e3085fa"
+                "reference": "22c6548499cbe5c5bb072fc0c42312dff062a015"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/polyfill-php84/zipball/f4e1dfaee5b74aba5964fe1fd4dfc7ba5e3085fa",
-                "reference": "f4e1dfaee5b74aba5964fe1fd4dfc7ba5e3085fa",
+                "url": "https://api.github.com/repos/symfony/polyfill-php84/zipball/22c6548499cbe5c5bb072fc0c42312dff062a015",
+                "reference": "22c6548499cbe5c5bb072fc0c42312dff062a015",
                 "shasum": ""
             },
             "require": {
@@ -1970,7 +1970,7 @@
                 "shim"
             ],
             "support": {
-                "source": "https://github.com/symfony/polyfill-php84/tree/v1.38.1"
+                "source": "https://github.com/symfony/polyfill-php84/tree/v1.43.0"
             },
             "funding": [
                 {
@@ -1990,7 +1990,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2026-05-26T12:51:13+00:00"
+            "time": "2026-09-23T22:01:09+00:00"
         }
     ],
     "packages-dev": [

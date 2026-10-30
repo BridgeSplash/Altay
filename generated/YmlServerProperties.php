@@ -95,6 +95,7 @@ final class YmlServerProperties{
 	public const NETWORK_MAX_SPLIT_PACKET_PARTS = 'network.max-split-packet-parts';
 	public const NETWORK_NETHERNET = 'network.nethernet';
 	public const NETWORK_NETHERNET_ADVERTISE_ADDRESSES = 'network.nethernet.advertise-addresses';
+	public const NETWORK_NETHERNET_HANDSHAKE_TIMEOUT = 'network.nethernet.handshake-timeout';
 	public const NETWORK_NETHERNET_ICE_PASSWORD = 'network.nethernet.ice-password';
 	public const NETWORK_NETHERNET_ICE_SERVERS = 'network.nethernet.ice-servers';
 	public const NETWORK_NETHERNET_ICE_USERNAME = 'network.nethernet.ice-username';
@@ -107,6 +108,7 @@ final class YmlServerProperties{
 	public const NETWORK_NETHERNET_SIGNALLING_PORT = 'network.nethernet.signalling-port';
 	public const NETWORK_NETHERNET_TLS_CERTIFICATE = 'network.nethernet.tls-certificate';
 	public const NETWORK_NETHERNET_TLS_KEY = 'network.nethernet.tls-key';
+	public const NETWORK_NETHERNET_UDP_PORT = 'network.nethernet.udp-port';
 	public const NETWORK_NETHERNET_UDP_PORT_RANGE = 'network.nethernet.udp-port-range';
 	public const NETWORK_NETHERNET_VERBOSE_LOGGING = 'network.nethernet.verbose-logging';
 	public const NETWORK_TRANSPORT = 'network.transport';

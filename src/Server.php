@@ -1385,6 +1385,26 @@ class Server {
 	}
 
 	/**
+	 * The one UDP port every player's media shares, or null to give each player their own.
+	 */
+	private function getNetherNetUdpPort(int $serverPort, bool $useQuery) : ?int{
+		$configured = $this->configGroup->getPropertyInt(Yml::NETWORK_NETHERNET_UDP_PORT, 0);
+		if($configured === 0){
+			return null;
+		}
+		if($configured < 1 || $configured > 65535){
+			$this->logger->warning("Ignoring " . Yml::NETWORK_NETHERNET_UDP_PORT . ", it must be between 1 and 65535");
+			return null;
+		}
+		if($configured === $serverPort && $useQuery){
+			//query owns the UDP side of the server port, and binding it twice would take the whole network down
+			$this->logger->warning("Ignoring " . Yml::NETWORK_NETHERNET_UDP_PORT . ", query already listens on udp/$serverPort. Pick another port or turn enable-query off");
+			return null;
+		}
+		return $configured;
+	}
+
+	/**
 	 * The name shown to a player the first time their client is asked to trust this server. It is
 	 * display text rather than part of the identity, so it can change without re-prompting anyone.
 	 */
@@ -1472,7 +1492,9 @@ class Server {
 						$this->getNetherNetTlsPath(Yml::NETWORK_NETHERNET_TLS_KEY),
 						$this->getNetherNetLimit(Yml::NETWORK_NETHERNET_MAX_PENDING_NEGOTIATIONS, 64),
 						$this->getNetherNetLimit(Yml::NETWORK_NETHERNET_MAX_NEGOTIATIONS_PER_ADDRESS, 32),
-						$this->configGroup->getPropertyBool(Yml::NETWORK_NETHERNET_VERBOSE_LOGGING, false)
+						$this->configGroup->getPropertyBool(Yml::NETWORK_NETHERNET_VERBOSE_LOGGING, false),
+						$this->getNetherNetLimit(Yml::NETWORK_NETHERNET_HANDSHAKE_TIMEOUT, NetherNetTransport::DEFAULT_HANDSHAKE_TIMEOUT),
+						$this->getNetherNetUdpPort($port, $useQuery)
 					),
 					$this->tickSleeper
 				);
